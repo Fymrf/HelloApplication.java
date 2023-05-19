@@ -1,0 +1,31 @@
+*{
+    /*-fx-border-color: yellow;*/
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+.table-view {
+  -fx-background-color: transparent; /* установка цвета фона */
+  -fx-border-color: #86C1F3;
+}
+
+.table-row-cell{
+    -fx-background-color: transparent; /* устанавливает цвет фона строк */
+    -fx-border-color: #86C1F3; /* установка цвета границ */
+    -fx-table-cell-border-color:#86C1F3;
+    -fx-border-width: 1px;
+}
+.table-view .table-row-cell:selected {
+    -fx-background-color: #ADD8E6;
+    -fx-text-fill:black;
+}
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: black;
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+AnchorPane{
+    -fx-background-color: #F5F5F5;
+    -fx-min-width: 700px;
+    -fx-min-height: 400px;
+    -fx-pref-width: 700px;
+    -fx-pref-height: 400px;
+}
+/* -------------------------------------------------------------------------------------------------------------- */

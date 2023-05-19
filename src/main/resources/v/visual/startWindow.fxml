@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="400" minWidth="700" prefHeight="400.0" prefWidth="700.0" stylesheets="@../../visMain.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="v.visual.StartWindowControl">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="227.0" layoutY="23.0" prefHeight="68.0" prefWidth="680.0" spacing="10.0" AnchorPane.bottomAnchor="322.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#newLes" prefHeight="30.0" prefWidth="160.0" styleClass="m" stylesheets="@../../visContrl.css" text="Создать новое занятие" />
+            <Label fx:id="label1" alignment="CENTER" contentDisplay="CENTER" text="Прошедшие занятия" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="84.0" prefHeight="255.0" prefWidth="580.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="80.0">
+         <children>
+            <GridPane alignment="CENTER" hgap="10.0" prefHeight="312.0" prefWidth="580.0" vgap="10.0" VBox.vgrow="ALWAYS">
+              <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS" prefWidth="380" />
+                <ColumnConstraints hgrow="ALWAYS" percentWidth="25.0" prefWidth="150.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                     <children>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="135.0" styleClass="m" stylesheets="@../../visContrl.css" text="Удалить" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="135.0" styleClass="m" stylesheets="@../../visContrl.css" text="Редактировать" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Button fx:id="closeButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#startNewLes" prefHeight="30.0" prefWidth="135.0" styleClass="m" stylesheets="@../../visContrl.css" text="Записать занятие" wrapText="true" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="135.0" styleClass="m" stylesheets="@../../visContrl.css" text="Воспроизвести &#10;запись занятия" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="183.0" prefWidth="430.0" GridPane.rowSpan="5">
+                     <children>
+                        <TableView fx:id="lessonsTable" fixedCellSize="0.0" prefHeight="250.0" prefWidth="442.0" styleClass="t" stylesheets="@../../visMain.css" VBox.vgrow="ALWAYS">
+                          <columns>
+                            <TableColumn fx:id="nameColumn" prefWidth="187.60000038146973" resizable="false" styleClass="t" text="Название" />
+                            <TableColumn fx:id="descrtiptionColumn" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="313.6000122070312" text="Вводная" />
+                          </columns>
+                            <!--<columnResizePolicy>
+                               <TableView fx:constant="UNCONSTRAINED_RESIZE_POLICY" />
+                            </columnResizePolicy>-->
+                         </TableView>
+                      </children>
+                   </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <children>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="135.0" styleClass="m" stylesheets="@../../visContrl.css" text="Открыть каталог &#10;видео-инструкций" textAlignment="CENTER" wrapText="true" />
+                     </children>
+                  </VBox>
+                </children>
+                <VBox.margin>
+                   <Insets />
+                </VBox.margin>
+                <opaqueInsets>
+                   <Insets />
+                </opaqueInsets>
+             </GridPane>
+          </children>
+       </VBox>
+    </children>
+ </AnchorPane>

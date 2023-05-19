@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="400" maxWidth="700" minHeight="400" minWidth="700" prefHeight="400.0" prefWidth="700.0" stylesheets="@../../visMain.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="v.visual.CreateNewTrain">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="164.0" prefHeight="190.0" prefWidth="526.0" spacing="50.0" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="190.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <Label text="Название">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label text="Вводная">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+               </children></VBox>
+            <VBox alignment="CENTER" prefHeight="190.0" prefWidth="454.0" spacing="50.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <TextField prefHeight="30.0" prefWidth="425.0" VBox.vgrow="ALWAYS">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin></TextField>
+                  <TextField prefHeight="30.0" prefWidth="425.0" />
+               </children>
+               <padding>
+                  <Insets right="25.0" />
+               </padding></VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="143.0" layoutY="220.0" prefHeight="100.0" prefWidth="200.0" spacing="150.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="200.0">
+         <children>
+            <Button minHeight="30.0" minWidth="100.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="m" stylesheets="@../../visContrl.css" text="Сохранить">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="clos" minHeight="30.0" minWidth="100.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="100.0" styleClass="m" stylesheets="@../../visContrl.css" text="Отмена">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+         </children></HBox>
+   </children>
+</AnchorPane>

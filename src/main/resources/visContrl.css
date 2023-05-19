@@ -1,0 +1,48 @@
+* {
+  -fx-main-bg-color: #cadeef;
+  -fx-main-bg-selection-color: #39ace7;
+  -fx-titlebar-color:#035189;/*#0784b5;*/
+  -fx-text-color-disable:#a0c9f4;
+  -fx-titlebar-text-color:#ffffff;
+  -fx-header-text-color:#020c42;
+  -fx-sapfir-default-color:#c3c3c3;
+  -fx-default-background-color: #f4f4f4;
+
+  -fx-text-color-enable:#035189;
+  -fx-control-default-color:#e0e0e0;/*#e0e0e0;*/
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+.button.m {
+    -fx-background-color: -fx-control-default-color;
+    -fx-background-repeat: repeat-x;
+    -fx-border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #B3B3B3;
+    -fx-border-radius: 4px;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 2px rgba(0, 0, 0, 0.05);
+    -fx-text-decoration: none;
+    -fx-text-fill: -fx-text-color-enable;
+    -fx-display: block;
+    -fx-font-size: 12px;
+    -fx-wrap-text: true;
+    -fx-font-weight: bolder;
+    -fx-min-width: 135px;
+    -fx-padding: 3px 9px;
+    -fx-text-alignment: center;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.4) , 2,2,0,1 );
+    -fx-alignment: center;
+    -fx-position: relative;
+}
+.button.m:hover {
+    -fx-transition-duration: 0.3s;
+    -fx-effect: dropshadow(three-pass-box, #000000, 5, 0, 0, 0);
+}
+.button.m:pressed, .button:active {
+    -fx-background-color:#B0B7C6;
+    -fx-box-shadow: inset 0 0 2px rgba(0,0,0,0.2), inset 0 2px 5px rgba(0,0,0,0.2), 0 1px rgba(255,255,255,0.2);
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+.radio-button:selected .radio .dot {
+    -fx-background-color: red;
+    -fx-background-insets: 0;
+}
